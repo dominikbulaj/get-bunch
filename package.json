@@ -1,0 +1,22 @@
+{
+  "name": "get-bunch",
+  "version": "1.0.0",
+  "description": "node.js module that collects remote data from different sources and passes it into callback",
+  "homepage": "https://github.com/clexit/get-bunch",
+  "author": "Voloshin Vasily",
+  "contributors": [
+    {
+      "name": "Voloshin Vasily"
+    },
+    {
+      "name": "clexit",
+      "email": "clexit@clexit.com",
+      "web": "http://clexit.com" 
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+}
