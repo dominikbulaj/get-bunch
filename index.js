@@ -84,6 +84,11 @@ exports.get = function( link, callback, _as_object, _request ) {
         if ( res.statusCode == 200 ) {
             res.on( 'data', data ).on( 'end', end );
         } else {
+            ret = {};
+            ret[ link.name ] = ( link.type === 'plain' ) ? '' : {};
+            callback(ret);
+            return;
+
             res.on('end', function(){
                 ret = {};
                 ret[ link.name ] = ( link.type === 'plain' ) ? '' : {};
