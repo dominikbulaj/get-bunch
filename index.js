@@ -10,14 +10,15 @@
  *
  *          console.log( results.name1 );   // parsed JSON from url1
  *          console.log( results.name2 );   // plain HTML from url2
- * 
+ *
  *      })
- * 
+ *
  */
 
 
 var url  = require( 'url' );
 var http = require( 'http' );
+var https = require( 'https' );
 
 /**
  * @param  {Object}   link   { name: '%alias%', url: '%url%', type: 'plain' }
@@ -94,7 +95,11 @@ exports.get = function( link, callback, _as_object, _request ) {
         }
     }
 
-    var req = http.request( options, resp);
+    var _transport = http;
+    if (options.protocol === 'https:') {
+        _transport = https;
+    }
+    var req = _transport.request( options, resp);
     req.setTimeout(5000,
         function(){
             console.log('Timed out: ' + link.url);
