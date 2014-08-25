@@ -2,10 +2,18 @@
 
 get-bunch collects remote data from different sources and passes it into callback.
 
+**Forked from: [clexit/get-bunch](https://github.com/clexit/get-bunch)**
+
+## Changes to original code
+
+1. added support for HTTPS protocol (created pull request to original repository)
+2. added Mocha tests
+3. added Travis CI support
+
 ## Installation
 
 ```
-npm install get-bunch
+npm install https://github.com/dominikbulaj/get-bunch/tarball/master
 ```
 
 ## Example
