@@ -4,6 +4,8 @@ get-bunch collects remote data from different sources and passes it into callbac
 
 **Forked from: [clexit/get-bunch](https://github.com/clexit/get-bunch)**
 
+[![Build Status](https://travis-ci.org/dominikbulaj/get-bunch.svg)](https://travis-ci.org/dominikbulaj/get-bunch)
+
 ## Changes to original code
 
 1. added support for HTTPS protocol (created pull request to original repository)
